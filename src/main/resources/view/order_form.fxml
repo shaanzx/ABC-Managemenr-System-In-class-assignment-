@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="pagingPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.OrderFormController">
+   <children>
+      <Label layoutY="-1.0" prefHeight="68.0" prefWidth="300.0" style="-fx-background-color: blue;" text="         ORDER MANAGEMENT" textFill="WHITE">
+         <font>
+            <Font name="Ubuntu Bold" size="20.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnAddNewOrder" buttonType="RAISED" layoutX="103.0" layoutY="115.0" onAction="#btnAddNewOrderOnAction" style="-fx-background-color: green;" text="Add New Order" textAlignment="CENTER" />
+      <JFXButton fx:id="btnUpdateOrder" buttonType="RAISED" layoutX="93.0" layoutY="159.0" onAction="#btnUpdateOrderOnAction" prefHeight="25.0" prefWidth="114.0" style="-fx-background-color: green;" text="Update Order" textAlignment="CENTER" />
+      <JFXButton fx:id="btnBack" buttonType="RAISED" layoutX="169.0" layoutY="353.0" onAction="#btnBackOnAction" prefHeight="25.0" prefWidth="114.0" style="-fx-background-color: red;" text="Back" textFill="WHITE" />
+      <JFXButton fx:id="btnViewOrder" buttonType="RAISED" layoutX="90.0" layoutY="200.0" onAction="#btnViewOrderList" prefHeight="25.0" prefWidth="120.0" style="-fx-background-color: green;" text="View Order" textAlignment="CENTER" />
+   </children>
+</Pane>

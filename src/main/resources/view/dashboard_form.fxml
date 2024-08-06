@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pagingPane" prefHeight="400.0" prefWidth="297.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.DashboardFormController">
+   <children>
+      <Label layoutY="-1.0" prefHeight="68.0" prefWidth="297.0" style="-fx-background-color: blue;" text="     WELLCOME TO ABC SHOP" textFill="WHITE">
+         <font>
+            <Font name="Ubuntu Bold" size="20.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnCustomer" buttonType="RAISED" layoutX="92.0" layoutY="116.0" onAction="#btnCustomerOnAction" style="-fx-background-color: green;" text="Manage Customer" />
+      <JFXButton fx:id="btnOrder" buttonType="RAISED" layoutX="92.0" layoutY="159.0" onAction="#btnOrderOnAction" prefHeight="25.0" prefWidth="114.0" style="-fx-background-color: green;" text="Manage Order" />
+      <JFXButton fx:id="btnExit" buttonType="RAISED" layoutX="169.0" layoutY="353.0" onAction="#btnExitOnAction" prefHeight="25.0" prefWidth="114.0" style="-fx-background-color: red;" text="Exit" textFill="WHITE" />
+   </children>
+</AnchorPane>

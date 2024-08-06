@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="pagingPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.ViewCustomerFormController">
+   <children>
+      <Label layoutY="-1.0" prefHeight="68.0" prefWidth="300.0" style="-fx-background-color: blue;" text="                VIEW CUSTOMER" textFill="WHITE">
+         <font>
+            <Font name="Ubuntu Bold" size="20.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnBack" buttonType="RAISED" layoutX="176.0" layoutY="365.0" onAction="#btnBackOnAction" prefHeight="25.0" prefWidth="114.0" style="-fx-background-color: red;" text="Back" textFill="WHITE" />
+      <TableView fx:id="tblCustomer" layoutX="11.0" layoutY="76.0" prefHeight="284.0" prefWidth="279.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="56.0" text="Id" />
+          <TableColumn fx:id="colName" prefWidth="66.0" text="Name" />
+            <TableColumn fx:id="colTel" prefWidth="72.0" text="Telephone" />
+            <TableColumn fx:id="colAddress" prefWidth="82.0" text="Address" />
+        </columns>
+      </TableView>
+   </children>
+</Pane>

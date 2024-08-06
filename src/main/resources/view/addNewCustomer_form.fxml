@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="pagingPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.AddNewCustomerFormController">
+   <children>
+      <Label layoutY="-1.0" prefHeight="68.0" prefWidth="300.0" style="-fx-background-color: blue;" text="         ADD NEW CUSTOMER" textFill="WHITE">
+         <font>
+            <Font name="Ubuntu Bold" size="20.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnBack" buttonType="RAISED" layoutX="36.0" layoutY="235.0" onAction="#btnBackOnAction" prefHeight="25.0" prefWidth="114.0" style="-fx-background-color: red;" text="Back" textFill="WHITE" />
+      <Label layoutX="30.0" layoutY="83.0" text="CID          : " />
+      <Label layoutX="30.0" layoutY="113.0" text="Name      : " />
+      <Label layoutX="30.0" layoutY="143.0" text="Contact   : " />
+      <Label layoutX="30.0" layoutY="173.0" text="Address   : " />
+      <TextField fx:id="txtCustomerCID" layoutX="102.0" layoutY="79.0" />
+      <TextField fx:id="txtCustomerName" layoutX="102.0" layoutY="109.0" />
+      <TextField fx:id="txtCustomerContact" layoutX="102.0" layoutY="139.0" />
+      <TextField fx:id="txtCustomerAddress" layoutX="102.0" layoutY="169.0" />
+      <JFXButton fx:id="btnSave" buttonType="RAISED" layoutX="176.0" layoutY="235.0" onAction="#btnSaveOnAction" prefHeight="25.0" prefWidth="114.0" style="-fx-background-color: Green;" text="Save" textFill="WHITE" />
+   </children>
+</Pane>

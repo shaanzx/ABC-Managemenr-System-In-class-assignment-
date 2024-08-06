@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="pagingPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.AddNewOrderFromController">
+   <children>
+      <Label layoutY="-1.0" prefHeight="68.0" prefWidth="300.0" style="-fx-background-color: blue;" text="              ADD NEW ORDER" textFill="WHITE">
+         <font>
+            <Font name="Ubuntu Bold" size="20.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnBack" buttonType="RAISED" layoutX="36.0" layoutY="265.0" onAction="#btnBackOnAction" prefHeight="25.0" prefWidth="114.0" style="-fx-background-color: red;" text="Back" textFill="WHITE" />
+      <Label layoutX="30.0" layoutY="83.0" prefHeight="17.0" prefWidth="67.0" text="Order ID " />
+      <Label layoutX="30.0" layoutY="113.0" text="Customer ID" />
+      <Label layoutX="30.0" layoutY="143.0" text="Description" />
+      <Label layoutX="30.0" layoutY="173.0" text="Unit Price" />
+      <TextField fx:id="txtOrderId" layoutX="102.0" layoutY="79.0" />
+      <TextField fx:id="txtCustomerId" layoutX="102.0" layoutY="109.0" />
+      <TextField fx:id="txtDescription" layoutX="102.0" layoutY="139.0" />
+      <TextField fx:id="txtUnitPrice" layoutX="102.0" layoutY="169.0" />
+      <JFXButton fx:id="btnOrderSave" buttonType="RAISED" layoutX="176.0" layoutY="265.0" onAction="#btnOrderSaveOnAction" prefHeight="25.0" prefWidth="114.0" style="-fx-background-color: Green;" text="Save" textFill="WHITE" />
+      <Label layoutX="30.0" layoutY="203.0" text="Qty" />
+      <TextField fx:id="txtQty" layoutX="102.0" layoutY="199.0" />
+   </children>
+</Pane>
